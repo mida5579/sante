@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/********** NAVBAR **************/
+.navbar
+{
+    height: 8rem;
+    font-size: 2rem;  
+    background-color: #164969;
+}
+
+.navbar .navbar-brand
+{
+    
+    font-size: 2rem; 
+    color: #444; 
+}
+
+.navbar ul li 
+{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 3rem;
+}
+
+.navbar ul li a
+{
+    font-size: 2rem;
+    color: #fff;
+   
+}
+
+
+/********** HEADER **************/
+
+.header
+{
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../image/medical-equipment-4099429_1920.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.welcome-text
+{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%,40%);
+    text-align: justify;
+    padding:1rem;
+   
+}
+
+.welcome-text h1
+{
+
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 6rem;
+   color: #fff;
+}
+
+.welcome-text p
+{
+   font-size: 4rem;
+   color: #fff;
+   line-height: 5rem;
+}
+
+button
+{
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+button:hover
+{
+   background-color: #08a9b9;
+   transition: all .4s ease-in-out;
+   border: none;
+
+}
+
+button:focus
+{
+   outline: none;
+}
+
+
+
+/********** PRESENTATION **************/
+
+.section-presentation
+{
+    width: 100%;
+    min-height: 70rem;
+    padding: 5rem;
+}
+
+
+.section-presentation h2
+{
+    font-size:5rem ;
+    padding-bottom: 5rem;
+    color: #444;
+}
+
+
+
+.card-illustration
+{
+    background-color: aquamarine;
+    min-height: 50rem;
+}
+
+.card-illustration img
+{
+   width: 100%;
+   height: 50rem;
+   object-fit: cover;
+}
+
+
+.card-description
+{
+    min-height: 50rem;
+    padding: 2rem 3rem 0;
+}
+
+.card-description h3
+{
+  font-size: 3rem;
+  color: #444;
+}
+
+.card-description u
+{
+  color: #08a9b9;
+}
+
+.card-description p
+{
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+/*********** services *************/
+
+
+.section-service
+{
+
+    width: 100%;
+    min-height: 40rem;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 5rem;
+    background-color: #f9f9f9;
+}
+
+
+
+.section-service h2,
+.section-equipe h2
+{
+
+    font-size:5rem ;
+    padding-bottom: 5rem;
+    color: #444;
+}
+
+
+.card-services
+{
+    max-width: 50rem; 
+    min-height: 35rem;
+    transition: all .4s ease-in;
+    margin-top: 5rem;
+}
+
+.card-services:hover
+{
+   border-top: 1px solid grey;
+   box-shadow: 0px 29px 33px -7px rgba(0,0,0,0.25);
+   
+
+}
+
+.services-illustration
+{
+ margin-bottom: 2.5rem;
+}
+
+.card-services img
+{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+
+.card-services h3
+
+{
+    font-size:2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+
+}
+
+
+
+
+.card-services .info-btn
+{
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    border-radius: 7px;
+    color: #08a9b9;
+    background-color: #444;
+}
+/*********** section-assistant *************/
+
+.section-assistant
+{
+    min-height: 20rem;
+    background-color: #08a9b9;
+}
+
+.text
+{
+   font-size: 4rem;
+   color: #fff;
+   padding: 3rem;
+}
+
+.image
+{
+  background-color: #fff;
+  height: 15rem;
+  width: 15rem;
+}
+
+
+
+/**************section-equipe ***************/
+
+
+.section-equipe
+{
+    min-height: 60rem;
+    background-color: #f9f9f9;
+    padding: 5rem; 
+}
+
+
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:lightgray;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+
